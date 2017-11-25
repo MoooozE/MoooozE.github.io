@@ -59,7 +59,7 @@
 		<div class="g-container">
 			<div class="posts-headline-right g-hidden-big">
 				<a href="#add" class="posts-headline-right__button">Add to my Centrallo</a>
-				<a href="#share" class="posts-headline-right__button_share"><div class="button-share__icon"></div><div class="button-share__text">Share</div></a>
+				<div class="posts-headline-right__button_share" data-modal="share1" onclick="openModal(this);"><div class="button-share__icon"></div><div class="button-share__text">Share</div></div>
 			</div>
 
 			<div class="posts-headline__header">
@@ -321,6 +321,28 @@
 		</div>
 	</div>	
 	
+	<div id="g-modal-blackscreen"></div>
+
+	<div class="main-page__modal" id="share1">
+		<div class="modal-share">
+			<div class="modal-share-head">
+				<div class="modal-share-head__text">Share</div>
+				<div class="modal-share-head__closebtn" data-modal="share1" onclick="closeModal(this);"></div>
+			</div>
+
+			<div class="modal-share-body">
+				<input type="text" readonly="readonly" value="http://cll.io/a6lnu" class="modal-share-body__link">
+			
+				<div class="modal-share-body-socials">
+					<a href="#facebook" class="modal-share-body-socials__item"><div class="social-icon-big_facebook"></div></a>
+					<a href="#twitter" class="modal-share-body-socials__item"><div class="social-icon-big_twitter"></div></a>
+					<a href="#vk" class="modal-share-body-socials__item"><div class="social-icon-big_vk"></div></a>
+					<a href="#linkedin" class="modal-share-body-socials__item"><div class="social-icon-big_linkedin"></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<link rel="stylesheet" href="css/stylesheet.min.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/custom.min.js"></script>
